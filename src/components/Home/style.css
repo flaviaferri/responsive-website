@@ -1,0 +1,90 @@
+.banner {
+  display: flex;
+  font-family: "Spartan", sans-serif;
+  font-size: 12px;
+}
+
+.imageHome {
+  display: flex;
+  width: 58%;
+  justify-content: start;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+  padding: 90px;
+  position: relative;
+}
+
+.home__title {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.home__text {
+  opacity: 50%;
+}
+
+.home__button {
+  font-weight: 700;
+  color: black;
+  letter-spacing: 3px;
+}
+
+.home__button:hover {
+  color: black;
+  opacity: 60%;
+  text-decoration-line: none;
+}
+
+.angle {
+  display: flex;
+  background-color: black;
+  width: 116px;
+  height: 55px;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.home__button__angle {
+  width: 50%;
+  display: flex;
+}
+
+.home__button__angle img {
+  margin: auto;
+  opacity: 70%;
+}
+
+.home__button__angle:hover {
+  background-color: hsl(0, 0%, 27%);
+}
+
+@media only screen and (max-width: 800px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+  .imageHome {
+    width: 100%;
+  }
+  .home {
+    width: 100%;
+    padding: 35px;
+  }
+  .angle {
+    display: flex;
+    background-color: black;
+    width: 128px;
+    height: 70px;
+    justify-content: space-evenly;
+    position: absolute;
+    top: -70px;
+    left: auto;
+    right: 0;
+  }
+}

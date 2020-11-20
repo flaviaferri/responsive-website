@@ -1,0 +1,49 @@
+.main {
+  display: flex;
+  font-family: "Spartan", sans-serif;
+  font-size: 10px;
+}
+
+.about {
+  flex-direction: column;
+  margin: 48px;
+}
+
+.about__title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.about__text {
+  text-align: justify;
+  opacity: 60%;
+}
+
+.imageDark {
+  width: 28%;
+}
+
+.imageLight {
+  width: 32%;
+}
+
+@media only screen and (max-width: 800px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about {
+    padding: 35px;
+  }
+
+  .imageDark {
+    width: 100%;
+  }
+
+  .imageLight {
+    width: 100%;
+  }
+}
