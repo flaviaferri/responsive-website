@@ -24,7 +24,7 @@
 }
 
 .home__text {
-  opacity: 50%;
+  opacity: 0.6;
 }
 
 .home__button {
@@ -35,7 +35,7 @@
 
 .home__button:hover {
   color: black;
-  opacity: 60%;
+  opacity: 0.6;
   text-decoration-line: none;
 }
 
@@ -57,7 +57,7 @@
 
 .home__button__angle img {
   margin: auto;
-  opacity: 70%;
+  opacity: 0.7;
 }
 
 .home__button__angle:hover {
