@@ -68,7 +68,11 @@ function Home() {
           srcset={bannersInfo[bannerPosition].imageMobile}
         ></source>
 
-        <img width="100%" src={bannersInfo[bannerPosition].imageMobile}></img>
+        <img
+          width="100%"
+          src={bannersInfo[bannerPosition].imageMobile}
+          alt="Banner"
+        ></img>
       </picture>
 
       <div className="home">

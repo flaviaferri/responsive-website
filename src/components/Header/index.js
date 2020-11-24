@@ -28,22 +28,22 @@ function Header() {
       </div>
       <div className={`navbar ${isOpen ? "isOpen" : ""}`}>
         <div>
-          <a href="" className="nav-link">
+          <a href="#" className="nav-link">
             home
           </a>
         </div>
         <div>
-          <a href="" className="nav-link">
+          <a href="#" className="nav-link">
             shop
           </a>
         </div>
         <div>
-          <a href="" className="nav-link">
+          <a href="#" className="nav-link">
             about
           </a>
         </div>
         <div>
-          <a href="" className="nav-link">
+          <a href="#" className="nav-link">
             contact
           </a>
         </div>
