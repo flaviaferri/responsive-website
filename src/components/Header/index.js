@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./style.css";
-import logo from "./logo.svg";
-import close from "./icon-close.svg";
-import hamburger from "./icon-hamburger.svg";
+import logo from "./images/logo.svg";
+import close from "./images/icon-close.svg";
+import hamburger from "./images/icon-hamburger.svg";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +28,13 @@ function Header() {
       </div>
       <div className={`navbar ${isOpen ? "isOpen" : ""}`}>
         <div>
-          <a href="#" className="nav-link">
+          <a
+            href="#home"
+            className="nav-link"
+            onClick={() => {
+              setIsOpen(false);
+            }}
+          >
             home
           </a>
         </div>
@@ -38,7 +44,13 @@ function Header() {
           </a>
         </div>
         <div>
-          <a href="#" className="nav-link">
+          <a
+            href="#about"
+            className="nav-link"
+            onClick={() => {
+              setIsOpen(false);
+            }}
+          >
             about
           </a>
         </div>

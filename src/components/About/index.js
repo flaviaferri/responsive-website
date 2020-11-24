@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
-import imageDark from "./image-about-dark.jpg";
-import imageLigth from "./image-about-light.jpg";
+import imageDark from "./images/image-about-dark.jpg";
+import imageLigth from "./images/image-about-light.jpg";
 
 function About() {
   return (
-    <div className="main">
+    <div className="main" id="about">
       {<img src={imageDark} alt="" className="imageDark" />}
       <div className="about">
         <p className="about__title">About our furniture</p>

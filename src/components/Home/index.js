@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "./style.css";
-import imageHome1 from "./desktop-image-hero-1.jpg";
-import imageHome2 from "./desktop-image-hero-2.jpg";
-import imageHome3 from "./desktop-image-hero-3.jpg";
-import imageMobile1 from "./mobile-image-hero-1.jpg";
-import imageMobile2 from "./mobile-image-hero-2.jpg";
-import imageMobile3 from "./mobile-image-hero-3.jpg";
-import imageArrowShop from "./icon-arrow.svg";
-import imageAngleLeft from "./icon-angle-left.svg";
-import imageAngleRight from "./icon-angle-right.svg";
+import imageHome1 from "./images/desktop-image-hero-1.jpg";
+import imageHome2 from "./images/desktop-image-hero-2.jpg";
+import imageHome3 from "./images/desktop-image-hero-3.jpg";
+import imageMobile1 from "./images/mobile-image-hero-1.jpg";
+import imageMobile2 from "./images/mobile-image-hero-2.jpg";
+import imageMobile3 from "./images/mobile-image-hero-3.jpg";
+import imageArrowShop from "./images/icon-arrow.svg";
+import imageAngleLeft from "./images/icon-angle-left.svg";
+import imageAngleRight from "./images/icon-angle-right.svg";
 
 const bannersInfo = [
   {
@@ -75,7 +75,7 @@ function Home() {
         ></img>
       </picture>
 
-      <div className="home">
+      <div className="home" id="home">
         <h2 className="home__title">{bannersInfo[bannerPosition].title}</h2>
         <p className="home__text">{bannersInfo[bannerPosition].text}</p>
         <p className="home__button">
