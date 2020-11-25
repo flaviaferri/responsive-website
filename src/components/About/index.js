@@ -6,7 +6,7 @@ import imageLigth from "./images/image-about-light.jpg";
 function About() {
   return (
     <div className="main" id="about">
-      {<img src={imageDark} alt="" className="imageDark" />}
+      <img src={imageDark} alt="" className="imageDark" />
       <div className="about">
         <p className="about__title">About our furniture</p>
         <p className="about__text">

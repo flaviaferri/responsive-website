@@ -7,7 +7,7 @@
 .imageHome {
   display: flex;
   width: 58%;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .home {

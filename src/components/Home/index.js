@@ -7,8 +7,8 @@ import imageMobile1 from "./images/mobile-image-hero-1.jpg";
 import imageMobile2 from "./images/mobile-image-hero-2.jpg";
 import imageMobile3 from "./images/mobile-image-hero-3.jpg";
 import imageArrowShop from "./images/icon-arrow.svg";
-import imageAngleLeft from "./images/icon-angle-left.svg";
-import imageAngleRight from "./images/icon-angle-right.svg";
+import imageAnglePrevious from "./images/icon-angle-left.svg";
+import imageAngleNext from "./images/icon-angle-right.svg";
 
 const bannersInfo = [
   {
@@ -42,16 +42,15 @@ const bannersInfo = [
   },
 ];
 function Home() {
+  const BANNER_LENGTH = bannersInfo.length - 1;
   const [bannerPosition, setBannerPosition] = useState(0);
   const handleClick = (arrowPosition) => {
-    if (arrowPosition === "left") {
-      const value =
-        bannerPosition - 1 < 0 ? bannersInfo.length - 1 : bannerPosition - 1;
+    if (arrowPosition === "previous") {
+      const value = bannerPosition - 1 < 0 ? BANNER_LENGTH : bannerPosition - 1;
       setBannerPosition(value);
     }
-    if (arrowPosition === "rigth") {
-      const value =
-        bannerPosition + 1 > bannersInfo.length - 1 ? 0 : bannerPosition + 1;
+    if (arrowPosition === "next") {
+      const value = bannerPosition + 1 > BANNER_LENGTH ? 0 : bannerPosition + 1;
       setBannerPosition(value);
     }
   };
@@ -86,19 +85,19 @@ function Home() {
         <div className="angle">
           <span
             onClick={() => {
-              handleClick("left");
+              handleClick("previous");
             }}
             className="home__button__angle"
           >
-            <img src={imageAngleLeft} alt="" className="imageAngle" />
+            <img src={imageAnglePrevious} alt="" className="imageAngle" />
           </span>
           <span
             onClick={() => {
-              handleClick("rigth");
+              handleClick("next");
             }}
             className="home__button__angle"
           >
-            <img src={imageAngleRight} alt="" className="imageAngle" />
+            <img src={imageAngleNext} alt="" className="imageAngle" />
           </span>
         </div>
       </div>

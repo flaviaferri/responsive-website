@@ -39,7 +39,7 @@ function Header() {
           </a>
         </div>
         <div>
-          <a href="#" className="nav-link">
+          <a href="#shop" className="nav-link">
             shop
           </a>
         </div>
@@ -55,7 +55,7 @@ function Header() {
           </a>
         </div>
         <div>
-          <a href="#" className="nav-link">
+          <a href="#contact" className="nav-link">
             contact
           </a>
         </div>
